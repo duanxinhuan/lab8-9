@@ -2,8 +2,8 @@ import java.io.IOException;
 import java.net.*;
 
 public class Client02 {
-    private String Inet_Addr = "localhost";
-    private int port = 7600;
+    private String Inet_Addr = "netprog2.csit.rmit.edu.au";
+    private int port = 61128;
 
     public static void main(String[] args) {
         new Client02();
@@ -19,7 +19,7 @@ public class Client02 {
 
             InetAddress ip = InetAddress.getByName("localhost");
 
-            int portNumber = 61124;
+            int portNumber = 61128;
 
             DatagramPacket dp = new DatagramPacket(text.getBytes(), text.length(), ip, portNumber);
 
