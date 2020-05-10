@@ -3,7 +3,7 @@ import java.net.*;
 
 public class Client01 {
     private String Inet_Addr = "localhost";
-    private int port = 7700;
+    private int port = 61128;
 
     public static void main(String[] args) {
         new Client01();
@@ -19,7 +19,7 @@ public class Client01 {
 
             InetAddress ip = InetAddress.getByName("localhost");
 
-            int portNumber = 61124;
+            int portNumber = 61128;
 
             DatagramPacket dp = new DatagramPacket(text.getBytes(), text.length(), ip, portNumber);
 
